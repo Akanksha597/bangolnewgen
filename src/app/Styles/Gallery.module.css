@@ -1,0 +1,122 @@
+.gallerySection {
+  background: #f8f9fa;
+}
+
+/* =========================
+   Main Image
+========================= */
+
+.mainImage {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  border-radius: 18px;
+  overflow: hidden;
+  animation: fadeIn 0.8s ease;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.mainImg {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.mainImage:hover .mainImg {
+  transform: scale(1.05);
+}
+
+/* =========================
+   Thumbnails
+========================= */
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.thumbWrapper {
+  position: relative;
+  width: 170px;
+  height: 110px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+}
+
+.thumbImg {
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.thumbWrapper:hover .thumbImg {
+  transform: scale(1.08);
+}
+
+.thumbWrapper:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.activeThumb {
+  border-color: #0d6efd;
+  transform: translateY(-5px);
+}
+
+/* =========================
+   Animation
+========================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 991px) {
+  .mainImage {
+    height: 420px;
+  }
+
+  .thumbWrapper {
+    width: 140px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainImage {
+    height: 300px;
+  }
+
+  .thumbWrapper {
+    width: 110px;
+    height: 75px;
+  }
+
+  .thumbnails {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainImage {
+    height: 240px;
+  }
+
+  .thumbWrapper {
+    width: 90px;
+    height: 60px;
+  }
+}
