@@ -145,6 +145,7 @@ export default function Enquiery() {
                   <option value="">Choose Branch</option>
                   <option>Pune</option>
                   <option>Mumbai</option>
+                  <option>Bengaluru</option>
                 </select>
                 <input type="text" name="course" value={formData.course} onChange={handleChange} placeholder="Enter Your Course Name" className="form-control mb-3" />
                 <button type="submit" className="btn btn-danger w-100" disabled={loading}>

@@ -164,7 +164,7 @@ const CourseDetailsPage = () => {
                 <strong>Category:</strong> {course.category}
               </p>
               <p>
-                <strong>Contact:</strong> {course.contactNumber}
+                <strong>Contact:</strong> 9579338436
               </p>
 
               {/* Action Buttons */}

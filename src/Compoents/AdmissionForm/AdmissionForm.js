@@ -1130,11 +1130,11 @@ export default function EnrollmentForm() {
               <p><b>TECHNOLOGY:</b> {formData.batchName}</p>
               <p><b>Batch Timing:</b> {formData.timeSlot}</p>
               <p><b>Faculty Name:</b> {formData.instructorName}</p>
-              <p><b>Organizer:</b> Newgen SoftTech Training Center, Pune</p>
+              <p><b>Organizer:</b> Newgen SoftTech Training Center, Bengaluru</p>
               <p>
                 <b>CONTACT US:</b><br />
-                EMAIL: support@Softgenpune.co.in<br />
-                MOBILE: +91 8669059498 / 9322077876
+                EMAIL: newgenbengaluru@gmail.com<br />
+                MOBILE: +91 9579338436 / 7892787036
               </p>
             </div>
           </Col>
@@ -1342,6 +1342,7 @@ export default function EnrollmentForm() {
                       <option value="">-- Select --</option>
                       <option value="Pune">Pune</option>
                       <option value="Mumbai">Mumbai</option>
+                      <option value="Bengaluru">Bengaluru</option>
                     </Form.Select>
                     <div className="invalid-feedback">{errors.branch}</div>
                   </Form.Group>

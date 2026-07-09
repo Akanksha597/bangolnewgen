@@ -5,7 +5,7 @@ import axios from "axios";
 import { Container } from "react-bootstrap";
 import styles from "../../app/Styles/coursespage.module.css";
 import Link from "next/link";
-import Image from "next/image";
+
 
 // const API_URL = "http://localhost:5016/api/v1/courses";
 
@@ -23,13 +23,13 @@ const CourseCard = ({ course }) => {
       <div className={`${styles.card3d} ${styles.glassCard}`}>
         {/* Image */}
         <div className={styles.cardMedia}>
-          <Image
-            src={imageUrl}
-            alt={course.courseName}
-            fill
-            style={{ objectFit: "cover", borderRadius: "8px" }}
-            priority
-          />
+                 <img
+  src={imageUrl}
+  alt={course.courseName}
+
+  style={{ objectFit: "cover", borderRadius: "8px" }}
+  priority
+/>
         </div>
 
         {/* Body */}
@@ -63,7 +63,10 @@ const CourseCard = ({ course }) => {
             </button>
           )}
 
-         <Link href={`/courses?id=${course._id}`} className={styles.exploreBtn}>
+<Link
+  href={`/courses/${course._id}`}
+  className={styles.exploreBtn}
+>
   Explore More
 </Link>
         </div>

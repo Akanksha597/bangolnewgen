@@ -112,20 +112,20 @@ const Footer = () => {
     <li className="mb-2 d-flex align-items-center flex-wrap gap-2">
   <BiPhone className="text-white flex-shrink-0" />
   <a
-    href="tel:+09579338436"
+    href="tel:+9579338436"
     className="text-white text-decoration-none hover-link"
   >
-    +91  09579338436
+    +91 9579338436
   </a>
 </li>
 
     <li className="mb-2 d-flex align-items-center flex-wrap gap-2">
   <BiPhone className="text-white flex-shrink-0" />
   <a
-    href="tel:+07892787036 "
+    href="tel:+7892787036 "
     className="text-white text-decoration-none hover-link"
   >
-    +91 07892787036 
+    +91 7892787036 
   </a>
 </li>
 
